@@ -1,0 +1,55 @@
+.flex{
+    display: flex;
+}
+
+@media (max-width:600px){
+    .flex{
+        flex-direction: column;
+    }
+
+    .right{
+        min-width: 93vw;
+        margin-left: 10px;
+        margin-right: 10px;
+        
+    }
+    
+}
+
+.justify-center{
+    justify-content: center;
+}
+
+.items-center{
+    align-items: center;
+}
+
+.border{
+    border: 2px solid red;
+    margin: 3px;
+}
+
+.bg-black{
+    background-color: black;
+    color: white;
+}
+
+.invert{
+    filter: invert(1);
+}
+
+.bg-grey{
+    background-color: #121212;
+}
+
+.rounded{
+    border-radius: 7px;
+}
+
+.m-1{
+    margin: 10px
+}
+
+.p-1{
+    padding: 10px;
+}

@@ -1,0 +1,46 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100%;
+    width: 100%;
+}
+
+.art-con{
+    height: 50vh;
+    width: 40vh;
+    overflow: scroll;
+}
+
+
+::-webkit-scrollbar {
+    height: 0px;
+    width: 12px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #555;
+    /* border-radius: 10px; */
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #888;
+    cursor: grab;
+}
+::-webkit-scrollbar {
+    height: 0px;
+    width: 12px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #555;
+    /* border-radius: 10px; */
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #888;
+    cursor: grab;
+}

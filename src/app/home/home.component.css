@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@600&family=Oswald&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+    font-variation-settings:"slnt" 0;
+}
+
+ul>li>a, a{
+    text-decoration: none;
+    color: white;
+}
+
+.flex{
+    display: flex;
+}
+
+@media (max-width:600px){
+    .flex{
+        flex-direction: column;
+    }
+
+    .right{
+        min-width: 93vw;
+        margin-left: 10px;
+        margin-right: 10px;
+        
+    }
+    
+}
+
+.justify-center{
+    justify-content: center;
+}
+
+.items-center{
+    align-items: center;
+}
+
+.border{
+    border: 2px solid red;
+    margin: 3px;
+}
+
+.bg-black{
+    background-color: black;
+    color: white;
+}
+
+.invert{
+    filter: invert(1);
+}
+
+.bg-greys{
+    background-color: #121212;
+}
+
+.roundedb{
+    border-radius: 7px;
+}
+
+.mar-1{
+    margin: 10px;
+}
+
+.par-1{
+    padding: 10px;
+}
+
+
+body{
+    background-color: black;
+    color: white;
+}
+
+.logo img{
+    display: inline-block;
+    vertical-align: middle; 
+    width: 32px; 
+    height: auto; 
+    margin-right: 2px;
+}
+
+.logo h1{
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 20px;
+}
+
+.logo{
+    margin-bottom: 0.5rem;
+}
+
+.left{
+    min-width: 25vw;
+}
+
+.right{
+    width: 75vw;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-right: 10px;
+    background: #1e1e1e;
+    background: linear-gradient(0deg, #101010 50%, #1e1e1e 100%);
+}
+
+.home ul li{
+    width: 25px;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding-top: 20px;
+}
+
+.home .logo{
+    padding-left: 5px;
+    padding-top: 2px;
+}
+
+.home ul{
+    padding-left: 5px;
+}
+
+.home{
+    overflow: hidden;
+}
+
+.search{
+    border: none;
+    font-size: 1rem;
+}
+
+.searchImg{
+
+}
+
+.search::-webkit-search-cancel-button {
+    display: none;
+}
+
+.search:focus{
+    outline: none;
+    color: white;
+}
+
+.search::placeholder{
+    color: white;
+}

@@ -1,0 +1,286 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@600&family=Oswald&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+    font-variation-settings:"slnt" 0;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+body{
+    background-color: black;
+    color: white;
+    /* height: 200vh; */
+}
+
+.logo img{
+    display: inline-block;
+    vertical-align: middle; 
+    width: 32px; 
+    height: auto; 
+    margin-right: 2px;
+}
+
+.logo h1{
+    display: inline-block;
+    vertical-align: middle; 
+    font-size: 20px;
+}
+
+.logo{
+    margin-bottom: 0.5rem;
+}
+
+.left{
+    min-width: 25vw;
+}
+
+.right{
+    width: 75vw;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-right: 10px;
+    background: #1e1e1e;
+    background: linear-gradient(0deg, #101010 50%, #1e1e1e 100%);
+}
+
+.home ul li{
+    width: 25px;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding-top: 20px;
+}
+
+.home .logo{
+    padding-left: 5px;
+    padding-top: 2px;
+}
+
+.home ul{
+    padding-left: 5px;
+}
+
+.heading{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 11px;
+    padding-left: 5px;
+    padding-top: 10px;
+}
+
+.heading img{
+    width: 25px;
+}
+
+.footer a{
+    text-decoration: none;
+    color: #a7a7a7;
+    font-weight: 100;
+}
+
+.footer{
+    padding-left: 5px;
+    width: 74%;
+    display: flex;
+    font-size: 11px;
+    gap: 13px;
+    flex-wrap: wrap;
+    position: absolute;
+    bottom: 20px;
+}
+
+.library{
+    min-height: 74vh;
+    position: relative;
+}
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    background-color: #101010;
+    border-radius: 5px 5px 0px 0px;
+    /* height: 10vh; */
+    /* position: fixed;
+    width: 75vw; */
+
+}
+
+.header > *{
+    padding: 20px;
+}
+
+.nav img{
+    background-color: #000000b3;
+    border-radius: 50%;
+    height: 30px;
+}
+
+.buttons{
+    cursor: pointer;
+}
+
+.btn{
+    height: 40px;
+    width: 100px;
+    border: none;
+    border-radius: 9999px;
+    background-color: white;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+#signInBtn{
+    background-color: transparent;
+    color: #a7a7a7;
+}
+
+#logInBtn{
+
+}
+
+#signInBtn:hover{
+    color: #ffffff;
+    font-weight: bolder;
+    transform: scale(1.1);
+}
+
+#logInBtn:hover{
+    transform: scale(1.1);
+    font-weight: bolder;
+}
+
+.spotifyPlaylist{
+    margin: 6px;
+}
+
+.cardContainer{
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin: 20px;
+    max-height: 73vh;
+    overflow: scroll;
+    margin-right: 0px;
+}
+
+::-webkit-scrollbar {
+    height: 0px;
+    width: 12px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #555;
+    /* border-radius: 10px; */
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #888;
+    cursor: grab;
+}
+
+.card{
+    width: 200px;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #0707079d;
+    position: relative;
+    transition: background .3s ease;
+}
+
+.card:hover{
+    background: #282828;
+}
+
+.card > *{
+    padding-top: 10px;
+}
+
+.card img{
+    width: 100%;
+    object-fit: contain;
+}
+
+
+.play{
+    height: 42px;
+    width: 42px;
+    background-color: #1ed760;
+    text-align: center;
+    border-radius: 50%;
+    position: absolute;
+    top: 150px;
+    right: 20px;
+    transform: translateY(20px);
+    /* display: none; */
+    opacity: 0;
+    transition: all .3s ease;
+}
+
+.card:hover .play{
+    transform: translateY(0px);
+    opacity: 1;
+}
+
+.play img{
+    width: 20px;
+}
+
+.body{
+    /* position: relative; */
+}
+
+.playbar{
+    /* position: absolute; */
+    /* bottom: 0px; */
+    background-color: rgb(30, 215, 96);
+    border-radius: 5px;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    height: 7.8vh;
+    display: flex;
+    align-items: center;
+}
+
+.songButtons{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.playBtn{
+    height: 30px;
+}
+
+.prevBtn, .nextBtn{
+    height: 25px;
+}
+
+.music-container{
+    margin-top: 20px;
+    margin-left: 25px;
+    height: 50vh;
+    width: 90%;
+    /* overflow: scroll; */
+}
+
+/* @media (min-width: 600px){
+    .container{
+        display: flex;
+    }
+} */

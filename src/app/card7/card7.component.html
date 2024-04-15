@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    .card{
+        width: 200px;
+        padding: 10px;
+        border-radius: 5px;
+        background-color: #0707079d;
+        position: relative;
+        transition: background .3s ease;
+    }
+
+    .card:hover{
+        background: #282828;
+    }
+
+    .card > *{
+        padding-top: 10px;
+    }
+
+    .card img{
+        width: 100%;
+        object-fit: contain;
+    }
+
+
+    .play{
+        height: 42px;
+        width: 42px;
+        background-color: #1ed760;
+        text-align: center;
+        border-radius: 50%;
+        position: absolute;
+        top: 150px;
+        right: 20px;
+        transform: translateY(20px);
+        /* display: none; */
+        opacity: 0;
+        transition: all .3s ease;
+    }
+
+    .card:hover .play{
+        transform: translateY(0px);
+        opacity: 1;
+    }
+
+    .play img{
+        width: 20px;
+    }
+</style>
+
+<body>
+    <div class="card">
+        <div class="play">
+            <img src="/assets/images/play.svg" alt="play">
+        </div>
+        <img src="/assets/images2/gi.jpg" alt="Shounen Ki">
+        <h2>Dream Aria</h2>
+        <p>Song • YU-PENG <br> CHEN</p>
+    </div>
+</body>
+</html>
