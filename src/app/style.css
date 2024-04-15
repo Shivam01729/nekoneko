@@ -43,6 +43,31 @@ body{
     min-width: 25vw;
 }
 
+@media (max-width: 1500px){
+    .left{
+        min-width: 30vw;
+    }
+}
+
+@media (max-width: 1250px){
+    .left{
+        min-width: 40vw;
+    }
+}
+
+@media (max-width: 920px){
+    .left{
+        min-width: 50vw;
+    }
+}
+
+@media (max-width: 740px){
+    .left{
+        min-width: 60vw;
+    }
+}
+
+
 .right{
     width: 75vw;
     margin-top: 10px;
