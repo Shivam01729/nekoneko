@@ -8,10 +8,18 @@
     }
 
     .right{
-        min-width: 93vw;
+        min-width: 95vw;
         margin-left: 10px;
         margin-right: 10px;
         
+    }
+
+    .nav{
+        display: block;
+    }
+
+    .library{
+        min-height: 90vh;
     }
     
 }
